@@ -1,0 +1,45 @@
+*** 2/Makefile.win	Thu Dec 19 12:36:09 2002
+--- /user/jhb/Makefile.win	Thu Dec 19 13:05:29 2002
+***************
+*** 98,117 ****
+  
+    R_LIB_DIR   = ${R_LIBRARY_DIR}
+    R_PAC_DIR   = ${R_PACKAGE_DIR}
+  
+!   WIN_R_ROOT  = c:/Programmer/R/rw1041
+!   CYG_R_ROOT  = /cygdrive/c/Programmer/R/rw1041
+  
+    UNIX_R_HJEM = $(shell $R RHOME)
+    UNIX_R_ROOT = `$R RHOME`
+  
+    S           = Splus5
+!   S_ROOT      = c:/Programmer/sp2000
+  # S_ROOT is only used for Windows / cygwin.
+  
+    XLISPSTAT   = xlispstat
+!   XLISP_ROOT  = c:/Statistics/Xlispstat
+  # XLISP_ROOT is only used for Windows / cygwin.
+  
+  
+  ###############################################################################
+--- 98,117 ----
+  
+    R_LIB_DIR   = ${R_LIBRARY_DIR}
+    R_PAC_DIR   = ${R_PACKAGE_DIR}
+  
+!   WIN_R_ROOT  = C:/Programmer/R/rw1061
+!   CYG_R_ROOT  = /cygdrive/c/Programmer/R/rw1061
+  
+    UNIX_R_HJEM = $(shell $R RHOME)
+    UNIX_R_ROOT = `$R RHOME`
+  
+    S           = Splus5
+!   S_ROOT      = C:/Programmer/Insightful/splus61
+  # S_ROOT is only used for Windows / cygwin.
+  
+    XLISPSTAT   = xlispstat
+!   XLISP_ROOT  = C:/Programmer/Xlispstat
+  # XLISP_ROOT is only used for Windows / cygwin.
+  
+  
+  ###############################################################################

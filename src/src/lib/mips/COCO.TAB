@@ -1,0 +1,492 @@
+  939  140    1
+   0  27   0 !        1 120  80 NUMB    48   0 188 INTE   102 202   0 ;     
+   0 255  10 -2LO     1 115  39 OPTI    48 172 189 TOTA   102 101   0 MODE  
+   0 255  12 2(/N     1   0 151 ORDI    49 170 180 DECO   102 201   0 OFF   
+   0 200   0 ;        1  73   0 OUTP    49 170 181 GRAP   102 203   0 ON    
+   0 254   2 ?        1 151   0 PAGE    50 203 200 ;      103 202   0 ;     
+   0 111   0 ?-EM     1 183   0 PAGI    50 201 200 EDGE   103 101   0 DF    
+   0 201 226 A        1 102  64 PART    50 202 200 INTE   103 201   0 OFF   
+   0 255   3 ABSO     1 102  52 PAUS    51 203 200 ;      103 203   0 ON    
+   0  57   0 ACCE     1 125  71 POWE    51 201 200 EDGE   104 206   0 ;     
+   0  45   0 ADD      1 167  45 PRIN    51 202 200 INTE   104 106   0 L     
+   0 155  65 ALGO     1 124  78 RAND    51  50   1 OTHE   104 106   0 MODE  
+   0 220 199 ALL      1 153  92 READ    52 203   0 ;      104 204   0 OFF   
+   0  55 226 ALTE     1   0  87 REJE    52 201   0 EDGE   104 205   0 ON    
+   0  39   0 AND      1 102  36 REPO    52 202   0 INTE   105 202   0 ;     
+   0   9 226 AUTO     1   0 152 RESP    53   0 250 ;      105 102   0 MODE  
+   0  52 200 BACK     1 176  86 REUS    53   0 228 BASE   105 201   0 OFF   
+   0  14   0 BASE     1 193 214 ROUG    53 201   0 END    105 203   0 ON    
+   0 214 199 BLOC     1 135 215 SEAR    53 212  13 STAT   105 102   0 UP    
+   0 255   8 C-RE     1 201  78 SEED    54 201   0 AUTO   106 206   0 ;     
+   0 189 118 CASE     1   0  74 SEPA    55 202   0 AUTO   106 204   0 OFF   
+   0 255 222 CHAN     1 102  51 SHOR    56 203   0 AUTO   106 205   0 ON    
+   0  30   0 CLEA     1 115  42 SIGA    57 201 227 A-DU   107 109   0 FOR   
+   0 211 199 COHE     1 127  69 SIGN    57 156 222 ALL    107 108   0 TEST  
+   0 254 129 COLL     1 191 214 SMAL    57 201 222 BASE   108 201  15 ALL   
+   0 164 157 COMM     1 102  95 SORT    57 202 222 CURR   108 203  15 DEVI  
+   0 255 106 COMP     1 205  39 SWIT    57  91   0 DECO   108 203  14 ON    
+   0  67  55 CONV     1 167  46 TABE    57  92   0 GRAP   109 196  18 PART  
+   0  70   0 COUN     1 167  46 TABL    57  93   0 HIER   109 197  17 TOTA  
+   0  15   0 CURR     1 102  19 TERM    57 158 222 INTE   109 197  19 UNPA  
+   0 254 101 CUTP     1 122   0 TEST    57 203 222 LAST   110 202  75 ;     
+   0 255 252 DATA     1 102  33 TIME    57   0 218 MODE   110 204  75 ALL   
+   0  81   0 DECO     1 102  37 TRAC    57 205 222 NUMB   110 205  75 DEVI  
+   0   6   0 DELE     1 159 169 VALU    57 202 227 R-DU   110   0  84 EPSI  
+   0   7   0 DESC     1 117   0 VARI    58 203 220 A-DU   110 198   0 FOR   
+   0 255  10 DEVI     2   0  14 DATA    58 201 220 ACCE   110 101  83 FULL  
+   0 102  32 DIAR     3   0  15 DATA    58 204 220 R-DU   110   0 255 LEVE  
+   0 175 179 DIFF     4 143 218 ACCE    58 202 220 REJE   110 104  75 LOG   
+   0  62 247 DIRE     4 143 207 BASE    59   0 109 ;      110 106  75 LOGL  
+   0   8   0 DISP     4 205 127 CONT    59 147 109 DATA   110 101  75 MODE  
+   0 255 241 DOS      4   0  88 DATA    62   0   0 ;      110 201  75 OFF   
+   0  44   0 DROP     4 201 127 DISC    62   0   0 SEAR   110 203  75 ON    
+   0 178 126 DUAL     4   0  90 FACT    66   0   0 CYCL   110 101  82 PART  
+   0  80  12 DUMP     4 179 217 GRAP    67   0   0 CRIT   110 105  81 SUM   
+   0   0   0 E        4 204 127 HETE    70   0 244 CLIQ   110  35   0 TEST  
+   0   9 226 EH       4 180 217 HIER    70   0 241 DECO   111   0 112 ;     
+   0 111   0 EM       4 203 127 HOMO    70   0 242 HIER   111   0  58 EPSI  
+   0 254 112 EMON     4 165 106 INCO    70   0 243 MIXE   111 112  57 INIT  
+   0 254   0 END      4   0 105 LIST    71 102  16 DIAR   111   0  59 ITER  
+   0 255  31 ERRO     4 168  10 LOCA    71 102  31 DUMP   111 203 110 OFF   
+   0  35   0 EXAC     4 202 127 MIXE    71 102  18 LOG    111   0 112 ON    
+   0  23   0 EXCL     4   0 127 MODE    71 102  17 REPO   112 201   0 ;     
+   0 254   0 EXIT     4   0 128 N-IN    72   0  23 COMM   112 202   0 FIRS  
+   0 255   2 EXPE     4   0  91 NAME    72   0  22 DATA   112 206   0 INPU  
+   0   2   0 EXPO     4   0 103 OBSE    72 201  19 FILE   112 203   0 LAST  
+   0  58   0 EXTR     4   0 107 Q-LI    72 203  19 KEYB   112 204   0 MEAN  
+   0 255   4 F-RE     4   0 106 Q-TA    72   0  21 OBSE   112 205   0 RAND  
+   0  36   0 FACT     4 143 219 REJE    72   0  20 SPEC   112 201   0 UNIF  
+   0 230 224 FHD      4 132   0 SEAR    72 203  19 TERM   113 115   0 A     
+   0  32   0 FIND     4 201  78 SEED    72  72   0 file   113 116   0 B     
+   0  34   0 FIT      4   0  89 SPEC    73   0  27 COMM   114 202 110 ;     
+   0  40   0 FIX      4   0 104 TABE    73   0  25 DIAR   114 204 110 IN    
+   0 213 199 FOLL     4   0 104 TABL    73   0  30 DUMP   114 201 110 OFF   
+   0  52 201 FORW     5   0   7 ALIA    73  73   0 FILE   114 203 110 ON    
+   0 255  11 FREE     5 156 137 ALL     73   0  29 LOG    115 201   0 OFF   
+   0 255   6 G-RE     5 201 137 BASE    73   0  28 REPO   115 203   0 ON    
+   0  49   0 GENE     5 164 157 COMM    73   0  26 RESU   116 211   0 OFF   
+   0  82   0 GRAP     5   0 123 CONT    74  75   0 OF     116 213   0 ON    
+   0 212 199 HEAD     5 202 137 CURR    75  76   0 NUMB   117 201  80 ;     
+   0 254   2 HELP     5 209  13 DATA    76  77   0 OF     117   0 168 LABL  
+   0  83   0 HIER     5 202 113 EXPE    77   0   0 TABL   117 118  80 NUMB  
+   0   0 248 I        5 208  13 FACT    80 201   0 ;      118 119   0 OF    
+   0   3   0 IMPO     5   0 134 FORM    80 206   0 CIPS   119 201   0 TABL  
+   0 255  14 INDE     5 158 137 INTE    80 209   0 DATA   120 121   0 OF    
+   0  18   0 INIT     5 203 137 LAST    80 206   0 DIPS   121   0   0 TABL  
+   0  72   0 INPU     5   5   0 MODE    80 212   0 EH     122 202  70 CHI   
+   0 255 224 IPS      5 205 137 NUMB    80 207   0 EM     122   0  47 FORM  
+   0  10   0 IS       5 216 113 OBSE    80 204   0 EXAC   122 201  70 LR    
+   0 175 178 JOIN     5   5   0 PERM    80 210   0 FILE   122 203  70 POWE  
+   0 201 199 JUST     5 201 113 PROB    80 205   0 FIX    123 204  72 KAPP  
+   0  71   0 KEEP     5   0 113 RECI    80 202   0 FORM   123 204  72 LAMB  
+   0 203  19 KEYB     5 207 137 REUS    80 206   0 IPS    123 203  72 OFF   
+   0 255  10 L-RE     5 174 114 SPAR    80 209   0 LIMI   123 205  72 ON    
+   0 102  94 LARG     5 208  13 SPEC    80 206   0 MIPS   124 202   0 SEED  
+   0   0 255 LEVE     5 174 121 STAN    80 206   0 MIXE   125   0   0 KAPP  
+   0 255 251 LIMI     5   0 113 TABE    80 209   0 OBSE   125   0   0 LAMB  
+   0 254 117 LIST     5   0 113 TABL    80 218   0 OLD    125 201   0 OFF   
+   0 255 107 LOG(     5   0 170 TEST    80 211   0 OTHE   126   0   0 LENG  
+   0 255   9 M-RE     5 163 135 VERT    80 212   0 SEAR   127   0   0 LEVE  
+   0 255 235 MAC      6   0   9 ALIA    80 208   0 SPEC   128 201  79 CELL  
+   0  13   0 MAKE     7 156 138 ALL     80 209   0 STRU   128 233  79 STOP  
+   0  66  56 MAXI     7 201 138 BASE    80 203   0 TEST   128 202  79 SUM   
+   0 175 177 MEET     7 202 138 CURR    81   0 158 MODE   129 201  61 CELL  
+   0  20   0 MENU     7 202 115 EXPE    81 210 226 SEAR   129 204  61 RELL  
+   0 221 199 MOST     7 158 138 INTE    82 220 226 SEAR   129   0  60 STOP  
+   0 255 220 NEWS     7 203 138 LAST    83 230 226 SEAR   129 203  61 SUFF  
+   0  16   0 NEXT     7   7   0 MODE    84 215   0 ;      129 202  61 SUM   
+   0  19   0 NO       7 205 138 NUMB    84 212   0 ALTE   130   0   0 EFFE  
+   0 177 125 NORM     7 216 115 OBSE    84 213   0 ROUG   131   0   0 SEAR  
+   0 255   0 OBSE     7 201 115 PPOB    84 211   0 SMAL   132   0 249 OPTI  
+   0  37   0 ONE      7   0 115 RECI    85 225   0 ;      133 101  66 MODE  
+   0 201 199 ONLY     7 207 137 REUS    85 222   0 ALTE   133 203 215 SEAR  
+   0 255 250 OPTI     7   0 115 TABE    85 223   0 ROUG   134 201 215 SEAR  
+   0  27   0 OR       7   0 115 TABL    85 221   0 SMAL   135 202 215 SEAR  
+   0  73   0 OUTP     8 186   0 ALL     86 235   0 ;      136 201 224 DUAL  
+   0 255 241 OVER     8 201 139 BASE    86 232   0 ALTE   137 202 224 DUAL  
+   0 204 137 PAM      8 202 139 CURR    86 233   0 ROUG   138 221   0 A-DU  
+   0 171 164 PART     8 210 216 DUAL    86 231   0 SMAL   138 223   0 BOTH  
+   0 102  52 PAUS     8 150 216 EH      87 211 225 A-DU   138 220   0 DUAL  
+   0 255 240 PC       8   0 136 FORM    87 215 225 BOTH   138 222   0 R-DU  
+   0 255 240 PC-V     8 158 139 INTE    87 214 225 LARG   139 231   0 A-DU  
+   0 202 113 PE       8 203 139 LAST    87 212 225 R-DU   139 233   0 BOTH  
+   0   0 134 PF       8   8   0 MODE    87 213 225 SMAL   139 230   0 DUAL  
+   0 254 116 PLOT     8 205 139 NUMB    88 221 225 A-DU   139 232   0 R-DU  
+   0 216 113 PO       8   8   0 OF      88 225 225 BOTH   140 201   0 ACCE  
+   0 201 113 PP       8   0 174 P-TA    88 224 225 LARG   140 203   0 REJE  
+   0 255 103 PRBI     8   0 174 PROB    88 220 217 MDLS   140 140   0 TO    
+   0  17   0 PREV     8   0 173 Q-TA    88 220 217 MODE   141 202   0 ACCE  
+   0   5   0 PRIN     8   0 172 TABL    88 222 225 R-DU   141 204   0 REJE  
+   0 255   1 PROB     8   0 171 TEST    88 223 225 SMAL   141 141   0 TO    
+   0   0 113 PT       9 205   0 ;       89 231 225 A-DU   142   0 210 IN    
+   0   0   0 QUIT     9 202   0 ALTE    89 235 225 BOTH   142   0 211 OUT   
+   0 255   5 R-F      9  84   0 DECO    89 234 225 LARG   143   0   0 ;     
+   0 255   7 R-G      9  85   0 GRAP    89 230 217 MDLS   143   0   0 MODE  
+   0 255 108 RAND     9  86   0 HIER    89 230 217 MODE   144   0 212 IN    
+   0 255 102 RANK     9 203   0 ROUG    89 232 225 R-DU   144   0 213 OUT   
+   0   0  88 RD       9 201   0 SEAR    89 233 225 SMAL   145 140   0 DUAL  
+   0   4   0 READ     9 201   0 SMAL    90 102 102 INTE   146 141   0 DUAL  
+   0 255   0 RECI    10   0 203 DECO    91 211 227 A-DU   147   0 109 ;     
+   0 210 199 RECU    10   0 202 GRAP    91 212 227 R-DU   147 148   0 WITH  
+   0  29   0 REDE    10 184 205 IN      92 221 227 A-DU   148 149   0 GENE  
+   0  41   0 REDO    10 194 204 SUBM    92 222 227 R-DU   149   0   0 TABL  
+   0  47   0 REDU    12   0 124 CONT    93 231 227 A-DU   150 210   0 ;     
+   0  26   0 REJE    12   0 120 MATR    93 232 227 R-DU   150 202   0 A-DU  
+   0  48   0 REMO    12  12   0 PERM    94 213 227 A-DU   150 206   0 ACCE  
+   0  41   0 REPE    12 195 122 STAN    94 214 227 R-DU   150 210   0 ALL   
+   0 255   0 RESI    12   0 119 VECT    95 223 227 A-DU   150 205   0 CLAS  
+   0 254   1 REST    13   0   8 ALIA    95 224 227 R-DU   150 201   0 DUAL  
+   0  12   0 RETU    13   0 132 BASE    96 233 227 A-DU   150 203   0 R-DU  
+   0 202 199 REVE    13   0 133 CURR    96 234 227 R-DU   150 207   0 REJE  
+   0   0 127 RM      14   0 130 ;       97 102  21 GRAP   151   0  48 FORM  
+   0   0 103 RO      14   0 207 MODE    97 101   6 MODE   151   0  49 LENG  
+   0  56 226 ROUG    15   0 131 ;       98 102  27 DIAR   151   0  50 WIDT  
+   0   0  89 RS      15   0   5 MENU    98 102  31 DUMP   152 201  93 ALL   
+   0   0 250 S       16   0   4 MENU    98 102  29 LOG    152 203  93 FILE  
+   0 202  93 SDSN    17   0   6 MENU    98 102  28 REPO   152 205  93 HUGE  
+   0  53   0 SEAR    18   0 248 ;       99 103  12 ADJU   152 204  93 LARG  
+   0  25   0 SELE    18 131 248 GRAP    99 102  35 BIC    152 102  44 LOG   
+   0 215 199 SEPA    18   0  11 PARS    99 102  38 COND   152 202  93 NECE  
+   0   1   0 SET     19   0 246 ACTI    99 190   0 DATA   152 102  95 SORT  
+   0 205 199 SHOR    20   0   5 ;       99 102  22 DEBU   153 201   0 ALL   
+   0   5   0 SHOW    20   0   3 NUMB    99 102   7 DECO   153 202   0 SUBS  
+   0   0  22 SID     22   0 102 MISS    99 102   4 DIAR   154 202  62 ARIT  
+   0   0  26 SINK    23 114   0 MISS    99 102  23 DUMM   154 201  53 CELL  
+   0  22   0 SKIP    25   0  96 CASE    99 102  25 DUMP   154   0  55 EPSI  
+   0   0 159 SLIC    26 203 227 A-DU    99 102   3 ECHO   154 203  62 GEOM  
+   0  54 226 SMAL    26 156 223 ALL     99 102  36 EM     154 204  62 HARM  
+   0   0  25 SOD     26 201 223 BASE    99 107   0 EXAC   154   0  56 ITER  
+   0   0  30 SODP    26   0  98 CASE    99 101  16 FAST   154 201  62 NORM  
+   0   0  29 SOL     26 202 223 CURR    99  97   0 GRAP   154   0  54 STOP  
+   0   0  28 SOR     26  94   0 DECO    99 102  40 HOMO   154 202  53 SUM   
+   0 203 199 SORT    26  95   0 GRAP    99 102  34 IC     155 201   0 A     
+   0   0  23 SOUR    26  95   0 HIER    99  90  39 INTE   155 202   0 B     
+   0 255 253 SPEC    26 158 223 INTE    99  98   0 KEEP   155 203   0 C     
+   0 255 220 SPLU    26 203 223 LAST    99 102   2 KEYB   156 204   0 MDLS  
+   0 255  12 SQRT    26   0 219 MODE    99 102   8 LARG   156 204   0 MODE  
+   0 255   9 STAN    26 205 223 NUMB    99 102  24 LOG    157 206   0 MDLS  
+   0  80  13 STAT    26 204 227 R-DU    99 102  21 NOTE   157 206   0 MODE  
+   0  59   0 SUBS    27  28  99 REJE    99 102   1 PART   158 157   0 OF    
+   0 255 254 TABL    27  28  97 SELE    99 102  33 PAUS   159   0   0 LABL  
+   0  33   0 TEST    28   0   0 CASE    99 102  10 REPO   160 211   0 A-DU  
+   0  44   0 TRY     29   0 100 FACT    99 176  11 REUS   160 213   0 BOTH  
+   0 255   3 UNAD    30   0 108 DATA    99 102   9 SHOR   160 210   0 DUAL  
+   0 255 101 UNIF    32 166 162 -2LO    99 102  26 SORT   160 212   0 R-DU  
+   0 255 230 UNIX    32 201 224 A-DU    99 102   5 TIME   161   0   0 MODE  
+   0 255 254 VALU    32 203 224 BOTH    99 102  13 TRAC   162   0   0 MDLS  
+   0 255 249 WORK    32 160 224 DECO    99 102  37 WARN   162   0   0 MODE  
+   0 255   9 X-RE    32   0 162 DEVI   100   0  10 -2LO   163 187   0 ORDE  
+   0 255  15 ZERO    32  32   0 DUAL   100   0  12 2(/N   164   0   0 DECO  
+   0 255   8 adju    32 138 224 GRAP   100 200   0 ;      165   0   0 TABL  
+   0 255 104 base    32 139 224 HIER   100   0   3 ABSO   166   0   0 ;     
+   0 255   0 coun    32   0 161 LOG(   100   0   8 ADJU   166   0   0 Q     
+   0 255 105 curr    32 202 224 R-DU   100 201 104 BASE   167   0   0 FORM  
+   0 255 223 em      33   0 160 ;      100   0   8 C-RE   168   0   0 PARS  
+   0 255 255 help    33 201 160 MODE   100   0   2 CANO   169   0   0 FILE  
+   0 255 248 inpu    33  37   0 ONE    100 201 106 COMP   170   0   0 ;     
+   0 255 103 norm    34 201 225 A-DU   100   0   0 COUN   170   0   0 MODE  
+   0 255 252 obse    34 156 221 ALL    100   0   8 COVA   171   0   0 ;     
+   0 255 249 outp    34 201 221 BASE   100 201 105 CURR   171   0   0 TEST  
+   0 255 221 remo    34 205 225 BOTH   100   0  13 DETE   172   0   0 GENE  
+   0 255 220 s       34 202 221 CURR   100   0  10 DEVI   172   0   0 INTE  
+   0 255 230 unix    34  87   0 DECO   100   0  63 ERRO   173 162   0 OF    
+   1   0  69 ACCE    34  88   0 GRAP   100   0   2 EXPE   174   0   0 TABL  
+   1 103  68 ADJU    34  89   0 HIER   100   0   4 F-RE   175   0   0 ;     
+   1 201  72 AIC     34 158 221 INTE   100   0  11 FREE   175   0   0 MODE  
+   1   0  69 ALFA    34 204 225 LARG   100   0   6 G-RE   175 175   0 OF    
+   1 155  65 ALGO    34 203 221 LAST   100   0   3 GS     176 176   0 OF    
+   1 192 214 ALTE    34   0 217 MODE   100   0   4 HS     176 102   0 TEST  
+   1   0  76 ASYM    34 205 221 NUMB   100   0  14 INDE   177   0   0 ;     
+   1   0 132 BASE    34 202 225 R-DU   100   0   5 KS     177 181   0 TO    
+   1 202  72 BIC     34 203 225 SMAL   100   0  10 L-RE   178   0   0 ;     
+   1   0 150 CHAI    35 202  75 ;      100   0  16 LEVE   178 182   0 TO    
+   1 128   0 CIPS    35 204  75 ALL    100 201 107 LOG    179 220   0 MDLS  
+   1 161 254 COMM    35 205  75 DEVI   100 201 107 LOG(   179 220   0 MODE  
+   1   0  73 COMP    35 198   0 FOR    100   0   9 M-RE   180 230   0 MDLS  
+   1 169  24 CONF    35 201  75 OFF    100 201 103 MATR   180 230   0 MODE  
+   1   0 133 CURR    35 203  75 ON     100   0   7 MEAN   181   0   0 DUAL  
+   1 152   0 DATA    35   0 163 TEST   100   0  14 MK     182   0   0 NORM  
+   1 102  38 DEBU    36   0 166 ;      100   0   6 MOME   183   0  63 LENG  
+   1 102  67 DECO    36  38   0 ONE    100   0  15 MS     184 185   0 ONE   
+   1 102  32 DIAR    37   0 165 EDGE   100 201 103 NORM   185   0   0 CLIQ  
+   1 154   0 DIPS    38   0 166 ;      100   0   0 OBSE   186 204 139 MDLS  
+   1 102  41 DUMP    38 201 166 EDGE   100   0  13 POWE   186 204 139 MODE  
+   1 102  34 ECHO    38 201 167 INTE   100 201 103 PRBI   186 200 175 Q-TA  
+   1 111   0 EM      39  42   0 FIX    100   0   1 PROB   187   0   0 ;     
+   1 110   0 EXAC    40   0 191 EDGE   100   0   5 R-F    187 201   0 REVE  
+   1 155  65 FACT    40   0 208 IN     100   0   7 R-G    189   0   0 ;     
+   1 101  77 FAST    40   0 209 OUT    100 201 108 RAND   189   0   0 LIST  
+   1 133   0 GRAP    41 144   0 FIX    100 201 102 RANK   190 102  30 LOG   
+   1 134   0 HIER    42   0 192 EDGE   100   0   9 RAW    191 201   0 ;     
+   1 123   0 IC      42   0 210 IN     100 100   0 RECI   191 201   0 SEAR  
+   1 131 248 INIT    42   0 211 OUT    100 100   0 RESI   192 202   0 ;     
+   1  72   0 INPU    44  51   0 ALL    100   0  12 SIGM   192 202   0 SEAR  
+   1 113  43 INTE    44   0 183 EDGE   100   0  12 SQRT   193 203   0 ;     
+   1 154   0 IPS     44   0 182 FACT   100   0  11 SS     193 203   0 SEAR  
+   1  71   0 KEEP    44   0 185 INTE   100   0  12 SSDS   194   0   0 ;     
+   1 102  19 KEYB    44 172 189 TOTA   100   0   9 STAN   194   0   0 OF    
+   1   0  71 LAMB    45 140 227 A-DU   100 201 102 TABL   195   0   0 ;     
+   1 102  94 LARG    45   0 184 EDGE   100   0  10 TOTA   195   0   0 VECT  
+   1  74  85 LIST    45 142   0 FIX    100   0   3 UNAD   196 197   0 OF    
+   1 102  40 LOG     45   0 186 INTE   100 201 101 UNIF   197 101   0 TEST  
+   1 130 206 MAIN    45 141 227 R-DU   100   0   9 X-RE   198 196  82 PART  
+   1 161 253 MENU    46   0 175 Q-TA   100   0  15 ZERO   198 197  81 TOTA  
+   1   0  60 MIPS    47   0 187 GENE   101 202   0 ;      198 197  83 UNPA  
+   1 129   0 MIXE    47   0 187 INTE   101 201   0 OFF    208   0 172 TABE  
+   1 102  35 NOTE    48   0 188 GENE   101 203   0 ON    
+ END;                          ; 0 0 0   0
+ RESTART;                      ; 0 0 0   1
+ HELP [ <command> | <abbreviat ; 0 0 0   2
+ MENU NUMBER <a>;              ; 0 0 1   3
+ NEXT MENU;                    ; 0 0 0   4
+ CURRENT MENU;                 ; 0 0 0   5
+ PREVIOUS MENU;                ; 0 0 0   6
+ PRINT ALIAS { <command> | <ab ; 0 0 0   7
+ MAKE ALIAS <command> <abbrevi ; 0 0 0   8
+ DELETE ALIAS <abbreviation>;  ; 0 0 0   9
+ READ LOCAL PARSER;            ; 0 0 0  10
+ INIT PARSER;                  ; 0 0 0  11
+ DUMP [ Formats | Fix | Tests  ; 0 0 0  12
+ STATUS [ Formats | Fix | Test ; 0 0 0  13
+ EXPORT DATA <file-name>;      ; 0 0 1  14
+ IMPORT DATA <file-name>;      ; 0 0 1  15
+ SET KEEP DIARY [ On | Off ];  ; 0 0 0  16
+ SET KEEP REPORT [ On | Off ]; ; 0 0 0  17
+ SET KEEP LOG [ On | Off ];    ; 0 0 0  18
+ SET KEYBOARD [ On | Off ];    ; 0 0 0  19
+ SET INPUTFILE SPECIFICATION < ; 0 0 1  20
+ SET INPUTFILE OBSERVATIONS <f ; 0 0 1  21
+ SET INPUTFILE DATA <file-name ; 0 0 1  22
+ SET INPUTFILE COMMANDS <file- ; 0 0 1  23
+%SET CONFIG FILE <file-name>;  ; 0 0 1  24
+ SET OUTPUTFILE DIARY <file-na ; 0 0 1  25
+ SET OUTPUTFILE RESULTS <file- ; 0 0 1  26
+ SET OUTPUTFILE COMMANDS <file ; 0 0 1  27
+ SET OUTPUTFILE REPORT <file-n ; 0 0 1  28
+ SET OUTPUTFILE LOG <file-name ; 0 0 1  29
+ SET OUTPUTFILE DUMP <file-nam ; 0 0 1  30
+ SET KEEP DUMP [ On | Off ];   ; 0 0 0  31
+ SET DIARY [ On | Off ];       ; 0 0 0  32
+ SET TIMER [ On | Off ];       ; 0 0 0  33
+ SET ECHO [ On | Off ];        ; 0 0 0  34
+ SET NOTE [ On | Off ];        ; 0 0 0  35
+ SET REPORT [ On | Off ];      ; 0 0 0  36
+ SET TRACE [ On | Off ];       ; 0 0 0  37
+ SET DEBUG [ On | Off ];       ; 0 0 0  38
+ SET OPTION { On | Off } <numb ; 0 0 1  39
+ SET LOG [ On | Off ];         ; 0 0 0  40
+ SET DUMP [ On | Off ];        ; 0 0 0  41
+ SET SIGALL { On | Off } [ <pi ; 0 0 0  42
+ SET INTERRUPT { A | B } { On  ; 0 0 0  43
+ SET DATA LOG [ On | Off ];    ; 0 0 0  44
+ SET PRINT FORMATS <format-wid ; 0 0 1  45
+ SET TABLE FORMATS <width> <de ; 0 0 1  46
+ SET TEST FORMATS <x-width> <x ; 0 0 1  47
+ SET PAGE FORMATS <line-length ; 0 0 1  48
+ SET PAGE LENGTH <number of li ; 0 0 1  49
+ SET PAGE WIDTH <line length>; ; 0 0 1  50
+ SET SHORT [ On | Off ];       ; 0 0 0  51
+ SET PAUSE [ On | Off ];       ; 0 0 0  52
+ SET IPS { CELL | SUM };       ; 0 0 0  53
+ SET IPS STOP <max> <epsilon>; ; 0 0 1  54
+ SET IPS EPSILON <epsilon>;    ; 0 0 1  55
+ SET IPS ITERATIONS <max>;     ; 0 0 1  56
+ SET EM INITIAL { Uniform | Fi ; 0 0 0  57
+ SET EM EPSILON <epsilon>;     ; 0 0 1  58
+ SET EM ITERATIONS <max>;      ; 0 0 1  59
+ SET MIXED STOP <cycles> <epsi ; 0 0 1  60
+ SET MIXED { CELL | SUM | SUFF ; 0 0 0  61
+ SET IPS { Normal | Arithmetic ; 0 0 0  62
+ SET PAGING LENGTH <number of  ; 0 0 1  63
+ SET PARTITIONING [ On | Off ] ; 0 0 0  64
+ SET ALGORITHM { A | B | C | D ; 0 0 0  65
+ SET GRAPH MODE [ On | Off ];  ; 0 0 0  66
+ SET DECOMPOSABLE MODE [ On |  ; 0 0 0  67
+ SET ADJUSTED DF [ On | Off ]; ; 0 0 0  68
+ SET ACCEPTANCE <alpha>;       ; 0 0 1  69
+ SET TEST { Lr | Chi | Power } ; 0 0 0  70
+ SET POWER { Off | Lambda { Nu ; 0 0 1  71
+ SET { Aic | Bic | Ic Kappa <k ; 0 0 1  72
+ SET COMPONENTS <P-value>;     ; 0 0 1  73
+ SET SEPARATORS <P-value>;     ; 0 0 1  74
+ SET EXACT TEST [ On | All | D ; 0 0 0  75
+ SET ASYMPTOTIC <P-value>;     ; 0 0 1  76
+ SET FAST [ On | Off ];        ; 0 0 0  77
+ SET SEED [ <seed> | Random ]; ; 0 0 1  78
+ SET CIPS { CELL | SUM | STOP  ; 0 0 0  79
+ SET { Variating number of tab ; 0 0 1  80
+ SET EXACT FOR TOTAL TEST [ On ; 0 0 0  81
+ SET EXACT FOR PARTS OF TEST [ ; 0 0 0  82
+ SET EXACT FOR UNPARTED TEST [ ; 0 0 0  83
+ SET EXACT EPSILON <epsilon>;  ; 0 0 1  84
+ SET LIST OF NUMBERS OF TABLES ; 0 0 1  85
+ SET REUSE OF TEST [ On | Off  ; 0 0 0  86
+ SET REJECTION <P-value>;      ; 0 0 1  87
+ READ DATA [ <specification> < ; 0 0 0  88
+ READ SPECIFICATION [ <specifi ; 0 0 0  89
+ READ FACTORS [ <factor-list>  ; 0 0 0  90
+ READ NAMES [ <name-list> ];   ; 0 0 0  91
+ SET READ { ALL | SUBSET <set> ; 1 0 1  92
+ SET DATASTRUCTURE { All | Nec ; 1 0 0  93
+ SET LARGE [ On | Off ];       ; 0 0 0  94
+ SET SORTED [ On | Off ];      ; 0 0 0  95
+ SELECT CASES <set> <marginal  ; 1 0 1  96
+ OR SELECT CASES <set> <margin ; 1 0 1  97
+ REJECT CASES <set> <marginal  ; 1 0 1  98
+ OR REJECT CASES <set> <margin ; 1 0 1  99
+ REDEFINE FACTOR <name> <# of  ; 1 0 1 100
+ CUTPOINTS <name> <cutpoints>; ; 1 0 1 101
+ SKIP MISSING;                 ; 1 0 0 102
+ READ OBSERVATIONS [ <observat ; 1 0 0 103
+ READ TABLE [ <table> ];       ; 1 0 0 104
+ READ LIST [ <list of cases> ] ; 1 0 0 105
+ READ Q-TABLE <set> <table>;   ; 1 0 1 106
+ READ Q-LIST <set> <list of ce ; 1 0 1 107
+ CLEAN DATA;                   ; 1 1 0 108
+ SUBSTITUTE DATA WITH GENERATE ; 0 0 0 109
+ EXCLUDE MISSING [ On | Off |  ; 1 1 0 110
+                               ; 0 0 0 111
+ EMON;                         ; 1 1 0 112
+ PRINT TABLE <value-name> <set ; 1 1 1 113
+ PRINT SPARSE TABLE <set>;     ; 1 1 1 114
+ DESCRIBE TABLE <value-name> < ; 1 1 1 115
+ PLOT <x-value-name> <y-value- ; 1 1 1 116
+ LIST <set>;                   ; 1 1 1 117
+ CASE LIST <set>;              ; 1 1 1 118
+ RETURN VECTOR <value-name> <s ; 1 1 1 119
+ RETURN MATRIX <list of value- ; 1 1 1 120
+ PRINT STANDARD TABLE <value-n ; 1 1 1 121
+ RETURN STANDARD VECTOR <value ; 1 1 1 122
+ PRINT CONTINUOUS <value-name> ; 1 1 1 123
+ RETURN CONTINUOUS <value-name ; 1 1 1 124
+ NORMAL TO DUAL;               ; 1 1 1 125
+ DUAL TO NORMAL;               ; 1 1 1 126
+ READ { MODEL | DISCRETE | MIX ; 1 1 1 127
+ READ N-INTERACTIONS <order> < ; 1 1 1 128
+ COLLAPSE MODEL <set>;         ; 1 1 1 129
+ BASE;                         ; 1 1 0 130
+ CURRENT;                      ; 1 1 0 131
+ MAKE BASE <a>;                ; 1 1 1 132
+ MAKE CURRENT <a>;             ; 1 1 1 133
+ PRINT FORMULA;                ; 0 0 0 134
+ PRINT VERTEX ORDERING [ Rever ; 0 0 0 135
+ DISPOSE OF FORMULA;           ; 1 1 0 136
+ PRINT MODEL [ Base | Current  ; 0 0 0 137
+ DESCRIBE MODEL [ Base | Curre ; 1 1 0 138
+ DISPOSE OF MODEL [ Base | Cur ; 1 1 0 139
+                               ; 0 0 0 140
+                               ; 0 0 0 141
+                               ; 0 0 0 142
+                               ; 0 0 0 143
+                               ; 0 0 0 144
+                               ; 0 0 0 145
+                               ; 0 0 0 146
+                               ; 0 0 0 147
+                               ; 0 0 0 148
+                               ; 0 0 0 149
+ SET CHAIN <ordered-gc>;       ; 1 0 1 150
+ SET ORDINAL <set>;            ; 1 0 1 151
+ SET RESPONSE <set>;           ; 1 0 1 152
+                               ; 0 0 0 153
+                               ; 0 0 0 154
+                               ; 0 0 0 155
+                               ; 0 0 0 156
+ PRINT COMMON DECOMPOSITIONS;  ; 0 0 0 157
+ DECOMPOSE MODELS <set>;       ; 1 1 1 158
+ SLICE [ -Optionlist / ] <fact ; 1 1 1 159
+ TEST [ Models <gc> [ <gc> ] ] ; 1 1 1 160
+ FIND LOG(L);                  ; 1 1 0 161
+ FIND DEVIANCE;                ; 1 1 0 162
+ EXACT TEST;                   ; 1 1 0 163
+ PARTITIONING TEST;            ; 1 1 0 164
+ TEST ONE EDGE;                ; 1 1 0 165
+ FACTORIZES ONE EDGE [ <set> ] ; 1 1 1 166
+ FACTORIZES ONE INTERACTION [  ; 1 1 1 167
+%SET VARIABLE LABLE <factor-na ; 0 0 0 168
+%SET VALUE LABLE <factor-name> ; 0 0 0 169
+ SHOW TESTS;                   ; 0 0 0 170
+ DISPOSE OF TESTS;             ; 0 0 0 171
+ DISPOSE OF TABLES;            ; 1 1 0 172
+ DISPOSE OF Q-TABLE <set>;     ; 1 0 1 173
+ DISPOSE OF PROBABILITIES;     ; 0 0 0 174
+ DISPOSE OF ALL Q-TABLES;      ; 1 0 0 175
+                               ; 0 0 0 176
+ MEET OF MODELS;               ; 1 1 1 177
+ JOIN OF MODELS;               ; 1 1 1 178
+ DIFFERENCE OF MODELS;         ; 1 1 1 179
+ GENERATE DECOMPOSABLE MODEL;  ; 1 1 0 180
+ GENERATE GRAPHICAL MODEL;     ; 1 1 0 181
+ DROP FACTOR <factor>;         ; 1 1 1 182
+ DROP EDGES <edge-list>;       ; 1 1 1 183
+ ADD EDGES <edge-list>;        ; 1 1 1 184
+ DROP INTERACTIONS <gc>;       ; 1 1 1 185
+ ADD INTERACTIONS <gc>;        ; 1 1 1 186
+ REDUCE GENERATOR <set>;       ; 1 1 1 187
+ REMOVE GENERATOR <set>;       ; 1 1 1 188
+ REMOVE TOTAL INTERACTION <set ; 1 1 1 189
+                               ; 0 0 0 190
+ FIX EDGES <edges>;            ; 1 0 1 191
+ AND FIX EDGES <edges>;        ; 1 0 1 192
+                               ; 0 0 0 193
+                               ; 0 0 0 194
+                               ; 0 0 0 195
+                               ; 0 0 0 196
+                               ; 0 0 0 197
+                               ; 0 0 0 198
+ [ ONLY | REVERSED | SORTED |  ; 0 0 1 199
+ BACKWARD [ Edges | Interactio ; 1 1 0 200
+ FORWARD [ Edges | Interaction ; 1 1 0 201
+ IS GRAPHICAL [ <gc> ];        ; 1 1 1 202
+ IS DECOMPOSABLE [ <gc> ];     ; 1 1 1 203
+ IS SUBMODEL OF [ <gc> ] [ <gc ; 1 1 1 204
+ IS IN ONE CLIQUE <factor> <fa ; 1 1 1 205
+ SET MAIN EFFECTS <set>;       ; 1 0 1 206
+ READ BASE MODEL <model>;      ; 1 1 1 207
+ FIX IN <edges/gc>;            ; 1 0 1 208
+ FIX OUT <edges/gc>;           ; 1 0 1 209
+ ADD FIX IN <edges/gc>;        ; 1 0 1 210
+ ADD FIX OUT <edges/gc>;       ; 1 0 1 211
+ REDO FIX IN;                  ; 1 0 0 212
+ REDO FIX OUT;                 ; 1 0 0 213
+ SET { Smallest | Alternating  ; 0 0 0 214
+ SET { Graphical | Hierarchica ; 1 1 0 215
+ DISPOSE OF EH [ All | Duals | ; 0 0 0 216
+ FIT Models <models>;          ; 1 1 1 217
+ ACCEPT Models <models>;       ; 1 1 1 218
+ REJECT Models <models>;       ; 1 1 1 219
+ EXTRACT [ Decomposable | Grap ; 0 0 0 220
+ FIT { Base | Current | Last | ; 0 0 0 221
+ ACCEPT { Base | Current | Las ; 0 0 0 222
+ REJECT { Base | Current | Las ; 0 0 0 223
+ FIND DUAL [ Decomposable | Gr ; 1 1 0 224
+ FIT [ Decomposable | Graphica ; 1 1 0 225
+ EH [ Decomposable | Graphical ; 1 1 0 226
+ [ ACCEPT | REJECT ] [ Decompo ; 1 1 1 227
+ SEARCH BASE;                  ; 0 0 0 228
+                               ; 0 0 0 229
+                               ; 0 0 0 230
+                               ; 0 0 0 231
+                               ; 0 0 0 232
+                               ; 0 0 0 233
+                               ; 0 0 0 234
+                               ; 0 0 0 235
+                               ; 0 0 0 236
+                               ; 0 0 0 237
+                               ; 0 0 0 238
+                               ; 0 0 0 239
+                               ; 0 0 0 240
+%COUNT DECOMPOSABLE <type> <di ; 0 0 1 241
+%COUNT HIERARCHICAL <type> <di ; 0 0 1 242
+%COUNT MIXED <type> <dim>;     ; 0 0 1 243
+%COUNT CLIQUES <type> <dim>;   ; 0 0 1 244
+                               ; 0 0 0 245
+ NO ACTION;                    ; 0 0 0 246
+ DIRECTED SEARCH;              ; 1 1 0 247
+ INIT GRAPHICAL SEARCH;        ; 1 1 0 248
+ SET SEARCH OPTION;            ; 0 0 0 249
+ SEARCH;                       ; 1 1 0 250
+                               ; 0 0 0 251
+                               ; 0 0 0 252
+ SET MENU MODE;                ; 0 0 0 253
+ SET COMMAND MODE;             ; 0 0 0 254
+ SET EXACT LEVEL;              ; 0 0 0 255

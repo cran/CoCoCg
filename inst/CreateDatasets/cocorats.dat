@@ -1,0 +1,31 @@
+#
+# Rats Data
+# Source: Morrison (1976). Multivariate Statistical Methods, McGraw-Hill.
+#
+factors a 2 / b 3 //
+#labels a "sex" b "Treatment" x "Wt loss 1" y "Wt loss 2"
+list
+1 1
+1 1
+1 1
+1 1
+1 2
+1 2
+1 2
+1 2
+1 3
+1 3
+1 3
+1 3
+2 1
+2 1
+2 1
+2 1
+2 2
+2 2
+2 2
+2 2
+2 3
+2 3
+2 3
+2 3;

@@ -1,0 +1,425 @@
+#!/bin/sh
+
+case $1 in
+CoCo)
+cat > ./bin/$1 <<+++
+#!/bin/sh
+
+COCOHOME=$2/
+COCOLIB=\${COCOHOME}lib/coco/
+COCOTMP=$4/
+COCOBIN=\${COCOBIN-$3}
+
+# Check if the "CoCo.log" exists
+if [ -f \${COCOHOME}Logs/CoCo.log ]
+then
+   # Make sure the "CoCo.log" is writable.
+   if [ -w \${COCOHOME}Logs/CoCo.log ]
+   then
+       echo \`date\` \`whoami\` \`pwd\` \$HOST >> \${COCOHOME}Logs/CoCo.log
+   fi
+fi
+
+export COCOHOME COCOLIB COCOTMP
+exec \${COCOLIB}\${COCOBIN} \$*
++++
+chmod a+x ./bin/CoCo
+;;
+
+# - - - - - - - - - End: CoCo - - - - - - - - - - Next: CoCo.bat - - - - - - - - #
+
+CoCo.bat)
+cat > ./bin/$1 <<+++
+rem CoCo.bat
+set COCOHOME=$2
+set COCOLIB=$2\\lib\\coco\\
+set COCOTMP=$4\\
+$2\\lib\\coco\\$3 %*
++++
+chmod a+x ./bin/CoCo.bat
+;;
+
+# - - - - - - - - - End: CoCo.bat - - - - Next: Windows-S-load.S - - - - - - - - #
+
+Windows-S-load.S)
+cat > ./lib/coco/Windows-S-load.S <<+++
+
+## Directory of CoCo ('COCOHOME'):
+COCOHOME   <- "$6$2"
+
+## Directory of object-file (now 'COCOLIB'):
+COCOLIB    <- "$6$3"
+
+## Directory of R- and S-files (now 'RSCOCOLIB'):
+RSCOCOLIB  <- "$6$4"
+
+## Name of object-file, without extension:
+SCSHLIB    <- "$5"
+
+file.path <- function(..., fsep="/") paste(..., sep=fsep)
+
+source(file.path(RSCOCOLIB, "Windows-S-files.S"))
+
++++
+;;
+
+# - - - - - - - - - End: Windows-S-load.S -  Next: Unix-S-load.S - - - - - - - - #
+
+Unix-S-load.S)
+cat > ./lib/coco/Unix-S-load.S <<+++
+
+## Directory of CoCo ('COCOHOME'):
+COCOHOME   <- "$6$2"
+
+## Directory of object-file (now 'COCOLIB'):
+COCOLIB    <- "$6$3"
+
+## Directory of R- and S-files (now 'RSCOCOLIB'):
+RSCOCOLIB  <- "$6$4"
+
+## Name of object-file, without extension:
+SCSHLIB    <- "$5"
+
+file.path <- function(..., fsep="/") paste(..., sep=fsep)
+
+source(file.path(RSCOCOLIB, "Unix-S-files.S"))
+
++++
+;;
+
+# - - - - - - - - - End: Unix-S-load.S  - - - - - - Next: S+CoCo - - - - - - - - #
+
+S+coco)
+# cat > ../src/R+S/S/Makefile.in <<+++
+# 
+# Splus = $4
+# +++
+# 
+# cat < ../src/R+S/S/Makefile.dist >> ../src/R+S/S/Makefile.in
+# cp ../src/R+S/S/Makefile.in ../src/R+S/S/Makefile
+# 
+
+#  cat > ../src/R+S/tests/Test.S+CoCo/Makefile.in <<+++
+#  
+#  Splus = $4
+#  
+#  S+CoCo = $3/bin/S+coco
+#  S+Mips = cat
+#  +++
+#  
+#  cat < ../src/R+S/tests/Test.S+CoCo/Makefile.dist >> ../src/R+S/tests/Test.S+CoCo/Makefile.in
+#  cp ../src/R+S/tests/Test.S+CoCo/Makefile.in ../src/R+S/tests/Test.S+CoCo/Makefile
+#  
+
+#  cat > ../src/R+S/tests/Test.Rats.S/Makefile.in <<+++
+#  
+#  Splus = $4
+#  
+#  S+CoCo = $3/bin/S+coco
+#  S+Mips = cat
+#  +++
+#  
+#  cat < ../src/R+S/tests/Test.Rats.S/Makefile.dist >> ../src/R+S/tests/Test.Rats.S/Makefile.in
+#  cp ../src/R+S/tests/Test.Rats.S/Makefile.in ../src/R+S/tests/Test.Rats.S/Makefile
+#  
+
+#  cat > ../src/R+S/tests/Test.Cane.S/Makefile.in <<+++
+#  
+#  Splus = $4
+#  
+#  S+CoCo = $3/bin/S+coco
+#  S+Mips = cat
+#  +++
+#  
+#  cat < ../src/R+S/tests/Test.Cane.S/Makefile.dist >> ../src/R+S/tests/Test.Cane.S/Makefile.in
+#  cp ../src/R+S/tests/Test.Cane.S/Makefile.in ../src/R+S/tests/Test.Cane.S/Makefile
+#  
+
+cat > ./bin/$1 <<+++
+#!/bin/sh
+
+COCOHOME=$2/
+COCOLIB=\${COCOHOME}lib/coco/
+SCOCOLIB=$3/
+COCOTMP=$5/
+SCSHLIB=scoco
+
+# Check if the "S+CoCo.log" exists
+if [ -f \${COCOHOME}Logs/S+CoCo.log ]
+then
+   # Make sure the "S+CoCo.log" is writable.
+   if [ -w \${COCOHOME}Logs/S+CoCo.log ]
+   then
+       echo \`date\` \`whoami\` \`pwd\` \$HOST >> \${COCOHOME}Logs/S+CoCo.log
+   fi
+fi
+
+S__FIRST='attach("'\${SCOCOLIB}'")'
+echo \$S__FIRST
+
+# This is working to (?):
+S_FIRST='attach("\${SCOCOLIB}")'
+
+echo \$S_FIRST
+
+export COCOHOME COCOLIB COCOTMP SCOCOLIB SCSHLIB S_FIRST S__FIRST
+$4 \$*
++++
+chmod a+x ./bin/S+coco
+;;
+
+# - - - - - - - - - End: S+CoCo - - - - - Next: Windows-R-load.R - - - - - - - - #
+
+Windows-R-load.R)
+cat > ./lib/coco/Windows-R-load.R <<+++
+
+## Directory of CoCo ('COCOHOME'):
+COCOHOME   <- "$6$2"
+
+## Directory of object-file (now 'COCOLIB'):
+COCOLIB    <- "$6$3"
+
+## Directory of R- and S-files (now 'RSCOCOLIB'):
+RSCOCOLIB  <- "$6$4"
+
+## Name of object-file, without extension:
+RCSHLIB    <- "$5"
+
+file.path <- function(..., fsep="/") paste(..., sep=fsep)
+
+source(file.path(RSCOCOLIB, "Windows-R-files.R"))
+
++++
+;;
+
+# - - - - - - - - - End: Windows-R-load.R -  Next: Unix-R-load.R - - - - - - - - #
+
+Unix-R-load.R)
+cat > ./lib/coco/Unix-R-load.R <<+++
+
+## Directory of CoCo ('COCOHOME'):
+COCOHOME   <- "$6$2"
+
+## Directory of object-file (now 'COCOLIB'):
+COCOLIB    <- "$6$3"
+
+## Directory of R- and S-files (now 'RSCOCOLIB'):
+RSCOCOLIB  <- "$6$4"
+
+## Name of object-file, without extension:
+RCSHLIB    <- "$5"
+
+file.path <- function(..., fsep="/") paste(..., sep=fsep)
+
+source(file.path(RSCOCOLIB, "Unix-R-files.R"))
+
++++
+;;
+
+# - - - - - - - - - End: Unix-R-load.R  - - - - - - Next: R+CoCo - - - - - - - - #
+
+R+coco)
+# cat > ../src/R+S/R/Makefile.in <<+++
+# 
+# R = $4
+# +++
+# 
+# cat < ../src/R+S/R/Makefile.dist >> ../src/R+S/R/Makefile.in
+# cp ../src/R+S/R/Makefile.in ../src/R+S/R/Makefile
+# 
+
+#  cat > ../src/R+S/tests/Test.R+CoCo/Makefile.in <<+++
+#  
+#  R = $4
+#  
+#  R+CoCo = $3/bin/R+coco
+#  R+Mips = cat
+#  +++
+#  
+#  cat < ../src/R+S/tests/Test.R+CoCo/Makefile.dist >> ../src/R+S/tests/Test.R+CoCo/Makefile.in
+#  cp ../src/R+S/tests/Test.R+CoCo/Makefile.in ../src/R+S/tests/Test.R+CoCo/Makefile
+#  
+
+#  cat > ../src/R+S/tests/Test.Rats.R/Makefile.in <<+++
+#  
+#  R = $4
+#  
+#  R+CoCo = $3/bin/R+coco
+#  R+Mips = cat
+#  +++
+#  
+#  cat < ../src/R+S/tests/Test.Rats.R/Makefile.dist >> ../src/R+S/tests/Test.Rats.R/Makefile.in
+#  cp ../src/R+S/tests/Test.Rats.R/Makefile.in ../src/R+S/tests/Test.Rats.R/Makefile
+#  
+
+cat > ./bin/$1 <<+++
+#!/bin/sh
+
+COCOHOME=$2/
+COCOLIB=\${COCOHOME}lib/coco/
+RCOCOLIB=$3/
+COCOTMP=$5/
+RCSHLIB=librcoco
+
+# Check if the "R+CoCo.log" exists
+if [ -f \${COCOHOME}Logs/R+CoCo.log ]
+then
+   # Make sure the "R+CoCo.log" is writable.
+   if [ -w \${COCOHOME}Logs/R+CoCo.log ]
+   then
+       echo \`date\` \`whoami\` \`pwd\` \$HOST >> \${COCOHOME}Logs/R+CoCo.log
+   fi
+fi
+
+R__FIRST='source("'\${RCOCOLIB}'load.R")'
+echo \$R__FIRST
+
+R_FIRST='source(file.path(system("echo \$RCOCOLIB", intern = T), "load.R"))'
+echo \$R_FIRST
+
+export COCOHOME COCOLIB COCOTMP RCOCOLIB RCSHLIB R_FIRST R__FIRST
+$4 \$*
++++
+chmod a+x ./bin/R+coco
+;;
+
+# - - - - - - - - - End: R+CoCo - - - - - Next: Windows-load.lsp - - - - - - - - #
+
+Windows-load.lsp)
+cat > ./lib/coco/cocoinit.lsp <<+++
+(default-coco-init)
++++
+
+# cat > ../src/lsp/cocoinit.lsp <<+++
+# (load "Examples/TestGraph")
+# +++
+
+cat > ./lib/coco/Windows-load.lsp <<+++
+
+;; Directory of CoCo ('COCOHOME'):
+;; (setf *cocohome* "$6$2")
+
+;; Directory of object-file (now 'COCOLIB'):
+(setf *cocolib* "$6$3")
+
+;; Directory of lsp-files (now 'XCOCOLIB'):
+(setf *xlisp-cocolib* "$6$4")
+
+;; Name of object-file, with extension:
+(setf *coco-object-name* "$5.dll")
+
+(expand 5)
+
+(load (concatenate 'string *xlisp-cocolib* "/cocofiles.lsp"))
+
+(load (concatenate 'string *xlisp-cocolib* "/tail-windows.lsp"))
+
++++
+
+cat ./lib/coco/Windows-load.lsp | sed -e s/cocofiles/mipsfiles/ > ./lib/coco/Windows-load-mips.lsp
+
+;;
+
+# - - - - - - - - - End: Windows-load.lsp  - Next: Unix-load.lsp - - - - - - - - #
+
+Unix-load.lsp)
+cat > ./lib/coco/cocoinit.lsp <<+++
+(default-coco-init)
++++
+
+# cat > ../src/lsp/cocoinit.lsp <<+++
+# (load "Examples/TestGraph")
+# +++
+
+cat > ./lib/coco/Unix-load.lsp <<+++
+
+;; Directory of CoCo ('COCOHOME'):
+;; (setf *cocohome* "$6$2")
+
+;; Directory of object-file (now 'COCOLIB'):
+(setf *cocolib* "$6$3")
+
+;; Directory of lsp-files (now 'XCOCOLIB'):
+(setf *xlisp-cocolib* "$6$4")
+
+;; Name of object-file, with extension:
+(setf *coco-object-name* "$5.so")
+
+(expand 5)
+
+(load (concatenate 'string *xlisp-cocolib* "/cocofiles.lsp"))
+
+(load (concatenate 'string *xlisp-cocolib* "/tail-unix.lsp"))
+
++++
+
+cat ./lib/coco/Unix-load.lsp | sed -e s/cocofiles/mipsfiles/ > ./lib/coco/Unix-load-mips.lsp
+
+;;
+
+# - - - - - - - - - End: Unix-load.lsp  - - - - Next: xlisp+coco - - - - - - - - #
+
+xlisp+coco)
+cat > ../src/lsp/src/Makefile.in <<+++
+
+XLISPSTAT = $4
++++
+
+cat < ../src/lsp/src/Makefile.dist >> ../src/lsp/src/Makefile.in
+cp ../src/lsp/src/Makefile.in ../src/lsp/src/Makefile
+
+cat > ./bin/$1 <<+++
+#!/bin/sh
+
+COCOHOME=$2/
+COCOLIB=\${COCOHOME}lib/coco/
+XCOCOLIB=$3/
+XLISPSTAT=$4
+COCOTMP=$5/
+
+# Check if the "Xlisp+CoCo.log" exists
+if [ -f \${COCOHOME}Logs/Xlisp+CoCo.log ]
+then
+   # Make sure the "Xlisp+CoCo.log" is writable.
+   if [ -w \${COCOHOME}Logs/Xlisp+CoCo.log ]
+   then
+       echo \`date\` \`whoami\` \`pwd\` \$HOST >> \${COCOHOME}Logs/Xlisp+CoCo.log
+   fi
+fi
+
+export COCOHOME COCOLIB COCOTMP XCOCOLIB
+
+if [ -f \${XCOCOLIB}src/coco.wks ]
+then
+   COCOLOAD=-w\${XCOCOLIB}src/coco.wks
+else
+   COCOLOAD=\${XCOCOLIB}loadcoco.lsp
+fi
+
+if [ -f cocoinit.lsp ]
+then
+   COCOINIT=cocoinit.lsp
+elif [ -f mystatinit.lsp ]
+then
+   COCOINIT=mystatinit.lsp
+elif [ -f .cocoinit.lsp ]
+then
+   COCOINIT=.cocoinit.lsp
+elif [ -f \${HOME}/cocoinit.lsp ]
+then
+   COCOINIT=\${HOME}/cocoinit.lsp
+elif [ -f \${HOME}/.cocoinit.lsp ]
+then
+   COCOINIT=\${HOME}/.cocoinit.lsp
+else
+   COCOINIT=\${XCOCOLIB}cocoinit.lsp
+fi
+
+echo \${COCOLOAD} \$* \${COCOINIT}
+\${XLISPSTAT} \${COCOLOAD} \$* \${COCOINIT}
+
++++
+chmod a+x ./bin/xlisp+coco
+;;
+esac
+

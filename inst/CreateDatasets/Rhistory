@@ -1,0 +1,5 @@
+source("CoCoCg.R")
+source("Rats.R")
+source("fev.R")
+package.skeleton("CoCoCg", list = ls(all.names = TRUE))
+quitCoCo()

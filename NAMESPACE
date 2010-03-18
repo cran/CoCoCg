@@ -1,0 +1,89 @@
+
+# import(CoCo)
+
+# import(CoCoObjects)
+# import(CoCoCore)
+# import(CoCoRaw)
+
+import(CoCo)
+
+export(
+
+#        # CoCoObjects:
+#        # ".First.lib.CoCoObjects", # ".First.lib.CoCoDynamicGraph",
+#         # ".new.coco", ".new.coco.model", ".SetSlotValue", 
+#         # ".set.coco.value", ".clear.coco.objects", ".object.of.thing", 
+#         # ".object.of.model", 
+#         # ".recover", ".recover.model", ".return.reference", 
+#         # ".recover.reference", ".return.type",
+#         # ".return.object.model.number", 
+#        "makeModel", # "newCoCoTestObject", 
+#        "recover.coco.model",
+
+#        # CoCoCore:
+#        "my.assign", 
+#         # "coco.load", "ok.coco.start", "my.not.a.number", 
+#        ".my.trace", 
+#         # ".object.of.models", 
+#        ".after.set.current",".before.set.both", ".before.set.current", 
+#         # "call.coco", 
+#         # "call.coco.chars", "call.coco.longs", "call.coco.message", 
+#         # "call.coco.reals", "call.coco.simple", "coco.enter.all", 
+#         # "coco.enter.string", "coco.replace.all", "coco.simple.command", 
+#         # "coco.simple.double", "coco.simple.model", "coco.string.double", 
+#         # "coco.string.model", 
+#        "coco.init", "coco.resume", "coco.start", 
+#        "endCoCo", "quitCoCo", "currentCoCo", 
+#         # "ok.coco", ".encode", 
+#         # ".encode.model", ".encode.model.1", ".encode.type.and.options", 
+#         # ".encode.visit", ".false.if.NULL", "is.gc", ".my.ascii",
+#        ".is.nil.model", "is.number", "make.coco", "make.cococg", 
+#        "make.model", "makeCurrentCoCo", 
+#           ".return.factor.type.list", ".return.level.list", 
+#           ".return.missing.list", ".return.name.list.string", 
+#           ".set.acceptance", ".set.components", 
+#           ".set.rejection", ".set.separators", 
+#         # ".set.current.model", ".split.data", ".table.value", 
+#           ".to.search", ".split.model.gc", ".names.from.model",
+#         # ".visit.interval", ".visit.model", ".visit.models",
+#        # ".First.lib.CoCoCore",
+
+#        # CoCoRaw:
+#        ".base", ".current", ".clean.up", ".dispose.of.fitted.values", 
+#        ".eh.enter.base.model", ".enter.n.interactions", ".fix.edges", 
+#        ".plotCoCo", ".set.datastructure", ".set.ic", ".set.switch", 
+#        ".show.log.lik", "backward", "cleanData", "disposeOfEh", 
+#        "disposeOfModel", "disposeOfQtable", "editModel", "eh", 
+#        "ehExtract", "ehFindDual", "ehFit", "ehForceAccept", 
+#        "ehForceAddDualToClass", "ehForceFix", "ehForceReject", 
+#        "ehSetBase", "ehSetMainEffects", "emOn", "enterDataFrame", 
+#        "enterList", "enterModel", "enterNames", "enterQlist", 
+#        "enterQtable", "enterTable", "enterTwoLists", 
+#        ".enter.double.list", "excludeMissing", 
+#        "exportCoCo", "extractData", "forward", "importCoCo", 
+#        "isSubmodel", "makeBase", "makeCurrent", "numberVariates", 
+#        "optionsCoCo", "partialAssociations", "propertyModel", 
+#        "propertySet", "randomTableReplacement", "returnDeviance", 
+#        "returnEdges", "returnExpression", "returnFix", "returnJunctionTree", 
+#        "returnModel", "returnModelNumber", "returnModelVariates", 
+#        "returnNcells", "returnSets", "returnTable", "returnTest", 
+#        "returnVariableDescription", "returnVertexOrder", "setOrdinal", 
+#        "setUseVariables", "showDeviance", "showFormula", "showModel", 
+#        "showOptions", "showTable", "showTest", "showTests", 
+#        "showVertexOrder", "sinkCoCo", "summaryTable",
+
+#        # CoCo:
+#        "makeCoCo", 
+
+       # CoCoCg:
+       "makeCoCoCg")
+
+# exportClasses("CoCoIdClass", "CoCoClass", "CoCoModelClass")
+
+# export(       "label", "width", # "testLabel", "testWidth", 
+#               "dynamic.Graph.Old", 
+#               "testEdge", "subModifyModel", "modifyModel", "dynamic.Graph")
+# exportClasses("CoCoTestClass", "CoCoIdClass", "CoCoClass", "CoCoModelClass")
+# exportMethods("label", "width", # "testLabel", "testWidth", 
+#               "dynamic.Graph.Old", 
+#               "testEdge", "subModifyModel", "modifyModel", "dynamic.Graph")

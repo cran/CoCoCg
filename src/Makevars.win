@@ -1,0 +1,4 @@
+# CoCo_Cygwin should also be defined for MinGW:
+PKG_CPPFLAGS = -DDCOCO -DR_APIX -DCoCo_Cygwin # -DNO_INTERRUPT
+PKG_CFLAGS = -Wno-parentheses -Wno-implicit-function-declaration -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-return-type # -Wno-switch-enum
+PKG_LIBS = -lm

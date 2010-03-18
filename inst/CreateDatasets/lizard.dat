@@ -1,0 +1,7 @@
+#
+#   Lizard Data. Source: Schoener, T.W. (1968). Ecology 49: 704:726.
+#
+factors a2 / b2 / c2 //
+#label  a "Species" b "Perch diam" c "Perch ht"
+table
+32 86 11 35 61 73 41 70;
